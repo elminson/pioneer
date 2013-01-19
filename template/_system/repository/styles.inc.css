@@ -1,0 +1,195 @@
+@import "/normalize.php";
+
+@media print {
+    * {
+        background: none !important;
+        color: black !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+
+        /* Images, vectors and such */
+        filter: Gray(); /* IE4-8: depreciated */
+        filter: url('desaturate.svg#grayscale'); /* SVG version for IE10, Firefox, Safari 5 and Opera */
+        -webkit-filter: grayscale(100%); /* Chrome + Safari 6 */
+        -moz-filter: grayscale(100%); /* Future proof */
+        -ms-filter: grayscale(100%); /* Future proof */
+        -o-filter: grayscale(100%); /* Future proof */
+        filter: grayscale(100%); /* Future proof or polyfilled */
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    a[href="#"],
+    a[href="javascript:"] {
+        content: "";
+    }
+}
+
+a {
+    color: #000;
+}
+
+p {
+    margin: 0px 0px 10px 0px;
+}
+
+.list {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.author {
+    font-family: Geneva;
+    font-size: 12px;
+    color: #cacaca;
+}
+
+.author a {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+/*
+@font-face{
+    font-family: 'MyFont';
+    src: url('myfont.eot');
+    src: url('myfont.eot?#iefix') format('embedded-opentype'),
+    url('myfont.woff') format('woff'),
+    url('myfont.ttf') format('truetype'),
+    url('myfont.svg#webfont') format('svg');
+}
+
+h1 { font-family: 'MyFont', sans-serif; }*/
+
+.content {
+    font: 1em/1.4 Segoe, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+.title {
+    font: 1.7em/1.2 Baskerville, "Baskerville old face", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+.code {
+    font: 0.8em/1.6 Monaco, Mono-Space, monospace;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* IE6/7 support */
+.clearfix {
+    *zoom: 1;
+}
+
+.break {
+    -ms-word-break: break-all;
+    word-break: break-all;
+
+    word-break: break-word;
+
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
+.ellipsis {
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis; /* Required for IE8 */
+    -o-text-overflow: ellipsis; /* Required for Opera */
+    text-overflow: ellipsis;
+}
+
+pre {
+    white-space: pre-wrap; /* Chrome & Safari */
+    white-space: -moz-pre-wrap; /* Mozilla since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+
+.jScrollPaneContainer {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.jScrollPaneTrack {
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    height: 100%;
+    /*background: #aaa;*/
+    background: url(/resources/images/scroll.gif) repeat-y center;
+}
+.jScrollPaneDrag {
+    position: absolute;
+    cursor: pointer;
+    overflow: hidden;
+    /*background: #666;*/
+    background: url(/resources/images/scroll-handle.png) no-repeat center;
+    height: 41px !important;
+    margin: 0px 0px 0px -1px;
+}
+.jScrollPaneDragTop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.jScrollPaneDragBottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+a.jScrollArrowUp {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    text-indent: -2000px;
+    overflow: hidden;
+    /*background-color: #666;*/
+    height: 9px;
+}
+a.jScrollArrowUp:hover {
+    /*background-color: #f60;*/
+}
+
+a.jScrollArrowDown {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    text-indent: -2000px;
+    overflow: hidden;
+    /*background-color: #666;*/
+    height: 9px;
+}
+a.jScrollArrowDown:hover {
+    /*background-color: #f60;*/
+}
+a.jScrollActiveArrowButton, a.jScrollActiveArrowButton:hover {
+    /*background-color: #f00;*/
+}

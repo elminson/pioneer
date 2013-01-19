@@ -865,7 +865,7 @@ class PioneerScheme extends ArrayList {
         //$this->_engine->StartTrans();
         
         // create default settings
-        Setting::Create('BLOB_CACHE_FOLDER', 'memo', '/resources/images/blob_cache', null, false, 'Blob manager settings | Настройки менеджера ресурсов')->Insert();
+        Setting::Create('BLOB_CACHE_FOLDER', 'memo', '/assets/static', null, false, 'Blob manager settings | Настройки менеджера ресурсов')->Insert();
         Setting::Create('MAIL_SMTP', 'memo', 'island.grc.ru', null, false, 'System settings | Настройки системы')->Insert();
         Setting::Create('DEVELOPER_EMAIL', 'memo', 'mk@e-time.ru;spawn@e-time.ru', null, false, 'System settings | Настройки системы')->Insert();
         Setting::Create('COPYRIGHT', 'memo', 'Company copyright', null, false, 'User settings | Пользовательские настройки')->Insert();

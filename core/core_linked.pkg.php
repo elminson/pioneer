@@ -7126,7 +7126,7 @@ class PioneerScheme extends ArrayList {
     }
     public function InsertInitialData() {
         $this->_engine->StartTrans();
-                Setting::Create('BLOB_CACHE_FOLDER', 'memo', '/resources/images/blob_cache', null, false, 'Blob manager settings | Настройки менеджера ресурсов')->Insert();
+                Setting::Create('BLOB_CACHE_FOLDER', 'memo', '/assets/static', null, false, 'Blob manager settings | Настройки менеджера ресурсов')->Insert();
         Setting::Create('MAIL_SMTP', 'memo', 'island.grc.ru', null, false, 'System settings | Настройки системы')->Insert();
         Setting::Create('DEVELOPER_EMAIL', 'memo', 'mk@e-time.ru;spawn@e-time.ru', null, false, 'System settings | Настройки системы')->Insert();
         Setting::Create('COPYRIGHT', 'memo', 'Company copyright', null, false, 'User settings | Пользовательские настройки')->Insert();
@@ -10768,7 +10768,7 @@ class ImageEditor {
         $filename = tempnam("","");
         if(!$filename) {
             global $core;
-            $p = $core->fs->mappath("/resources/images/blob_cache");
+            $p = $core->fs->mappath("/assets/static");
             $filename = $p."/".str_random(20);
         }
         if(empty($type))

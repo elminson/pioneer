@@ -1,0 +1,18 @@
+RewriteEngine On
+
+AddDefaultCharset utf8
+
+RewriteCond %{REQUEST_DIRNAME} -d [OR]
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^(.*)$ $1 [L,QSA]
+
+RewriteCond %{REQUEST_URI} !^.*index.php
+
+RewriteRule ^([^/]+)/([A-z]+)([0-9]+)/$ index.php?folder=$1&storage=$2:$3 [L,QSA]
+RewriteRule ^([^/]+).php$ index.php?fr=$1&%{QUERY_STRING} [L]
+                                     
+RewriteRule ^resources/blobs/([^\.]+)\..*$ blob.php?blobid=$1 [L]
+RewriteRule ^.+$ /index.php [L,QSA]            
+                                          
+
+

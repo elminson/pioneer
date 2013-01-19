@@ -1,9 +1,11 @@
 
 *.exe
+*.tmp
+*.lock
+*.lck
 *.zip
-Thumbs.db
-
 *.log
+*.pid
 *.properties
 *.buildpath
 *.project
@@ -13,7 +15,11 @@ Thumbs.db
 .project
 
 .installed.cfg
-log
-tmp
-.idea
+.settings
+log/*
+logs/*
+tmp/*
+.git/*
+.idea/*
 .DS_Store
+Thumbs.db

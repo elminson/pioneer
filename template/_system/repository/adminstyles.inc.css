@@ -1,0 +1,141 @@
+
+
+
+body {
+    padding: 10px;
+    margin: 0px;
+}
+
+body, td {
+    font-family: tahoma;
+    font-size: 11px;
+    color: #000;
+}
+
+
+.image-right {
+    float: right;
+    margin: 0px 0px 5px 10px;
+}
+
+.image-left {
+    float: left;
+    margin: 0px 10px 5px 0px;
+}
+
+form, input, textarea {
+    margin: 0px;
+    padding: 0px;
+}
+
+input { vertical-align: middle; }
+
+img {
+    border: 0px;
+    display: inline;
+    vertical-align: middle;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+    margin: 0px 0px 10px 0px;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 29pt;
+    color: #000000;
+}
+
+h2 {
+    font-size: 21pt;
+    line-height: 100%;
+    color: #cc3300;
+}
+
+h3 { 
+    font-family: arial;
+    font-size: 110%;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h4 { 
+    font-size: 13pt;
+    font-style: italic;
+    color: #e61111; /*#cc3300;*/
+}
+
+h5 { 
+    font-size: 12pt;
+    color: #2f4992;
+}
+
+h6 { 
+    font-size: 100%;
+    font-weight: bold;
+    color: #000;
+    margin: 0px 0px 5px 0px;
+}
+
+h3 span { color: #a73939; }
+
+a, a:link, a:active {
+    font-size: 100%;
+    color: #2aac37;
+}
+
+a:visited {
+    color: #17601f;
+}
+
+a:hover, a:visited:hover {
+    font-size: 100%;
+    color: #2aac37;
+}
+
+
+ul,
+ol {
+    margin: 0px 0px 0px 20px;
+    padding: 0px;
+}
+
+ul li,
+ol li {
+    padding: 0px 0px 10px 0px;
+}
+
+
+img.left {
+    float: left;
+    margin: 0px 20px 5px 0px;
+}
+
+img.right {
+    float: right;
+    margin: 0px 0px 15px 20px;
+}
+
+p { margin: 0px 0px 10px 0px; }
+p img { margin: 0px 10px 10px 0px; }
+
+.bold { font-weight: bold; }
+.italic { font-style : italic; }
+
+.left { text-align: left; }
+.right { text-align: right; }
+.center { text-align: center; }
+
+.attantion {
+    padding: 7px 0px 10px 50px;
+    background: url(/resources/images/layout/attantion.jpg) left top no-repeat;
+    
+    font-size: 14px;
+    color: #990100;
+    
+}
+
+.imageborder {
+    border: 2px solid #ff9000;
+}

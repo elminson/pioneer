@@ -1,0 +1,20 @@
+<Styles >
+  <Style name="Float left" element="img">
+    <Attribute name="class" value="f-left" />
+  </Style >
+  <Style name="Float right" element="img">
+    <Attribute name="class" value="f-right" />
+  </Style >
+  <Style name="Bordered image" element="img">
+    <Attribute name="class" value="imageborder" />
+  </Style >
+  <Style name="Italic" element="span">
+    <Attribute name="class" value="italic" />
+  </Style>
+  <Style name="Bold" element="span">
+    <Attribute name="class" value="bold" />
+  </Style>
+  <Style name="Attantion" element="div">
+    <Attribute name="class" value="attantion" />
+  </Style>
+</Styles>

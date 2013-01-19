@@ -786,7 +786,7 @@ VALUES ('ru', 'Russian');
 -- Data for table public.sys_settings (OID = 68930) (LIMIT 0,9)
 --
 INSERT INTO sys_settings (setting_id, setting_name, setting_value, setting_type, setting_securitycache, setting_issystem, setting_category)
-VALUES (1, 'BLOB_CACHE_FOLDER', '/resources/images/blob_cache', 'memo', 'O:9:"Hashtable":2:{s:8:"', false, 'Blob manager settings | Настройки менеджера ресурсов');
+VALUES (1, 'BLOB_CACHE_FOLDER', '/assets/static', 'memo', 'O:9:"Hashtable":2:{s:8:"', false, 'Blob manager settings | Настройки менеджера ресурсов');
 
 INSERT INTO sys_settings (setting_id, setting_name, setting_value, setting_type, setting_securitycache, setting_issystem, setting_category)
 VALUES (2, 'MAIL_SMTP', 'island.grc.ru', 'memo', NULL, false, 'System settings | Настройки системы');

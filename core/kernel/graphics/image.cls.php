@@ -380,7 +380,7 @@ class ImageEditor {
         $filename = tempnam("","");
         if(!$filename) {
             global $core;
-            $p = $core->fs->mappath("/resources/images/blob_cache");
+            $p = $core->fs->mappath("/assets/static");
             $filename = $p."/".str_random(20);
         }
             
