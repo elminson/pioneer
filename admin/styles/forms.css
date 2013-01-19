@@ -1,0 +1,89 @@
+form {
+    margin: 0px;
+    padding: 0px;
+}
+
+.text-box {
+    border:1px solid #6286aa;
+    font-size:11px;
+    padding-left:3px;
+    padding-right:4px;
+    padding-top:1px;
+    padding-bottom:2px;
+    font-family:tahoma;
+}
+
+.code-box {
+    border:1px inset #6286aa;
+    font-size:12px;
+    padding-left:3px;
+    padding-right:4px;
+    padding-top:1px;
+    padding-bottom:2px;
+    font-family:courier new;
+}
+
+.select-box {
+    border:1px solid #a7a6aa;
+    font-size:11px;
+    font-family:Tahoma;
+}
+
+.check-box {
+    font-size:11px;
+}
+
+.simple-button {
+    padding: 1px 5px 1px 5px;
+    border: 1px solid #18212A;
+    background-color: #5A6B7D;
+    text-align: center;
+    vertical-align: top;
+    color: #FFFFFF;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: tahoma;
+}
+
+.small-button-long {
+    width: 102px;
+    height: 21px;
+    text-align: center;
+    vertical-align: top;
+    font-size: 11px;
+    color:#fff;
+    border:0px;
+    padding:0px;    
+    background-color: transparent;    
+    background-image:url(../images/new/small-button-long.gif);
+}
+
+.small-button {
+    width: 23px;
+    height: 21px;
+    text-align: center;
+    vertical-align: top;
+    color:#fff;
+    font-size: 11px;
+    background-color: transparent;
+    background-image:url(../images/new/small-button.gif);
+    margin: 0px 3px 0px 0px;
+    border:0px;
+    padding:0px;    
+}
+
+.command-button {
+    width:120px;
+    height:27px;
+    border:0px;
+    font-size: 11px;
+    padding:0px;
+    background-image:url(../images/new/button.gif);
+    text-align:center;
+    vertical-align:top;
+    color:#FFFFFF;
+    font-size:10px;
+    font-weight:bold;
+    font-family:tahoma;
+    margin: 0px 10px 0px 0px;
+}

@@ -1,0 +1,274 @@
+/* templates */
+
+.content-table {
+    cursor:default;
+    width: 100%;
+}
+
+.content-table .content-table {
+    width: auto;
+}
+
+
+.content-table tr td {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.content-inner-table {
+    cursor:default;
+}
+
+.content-inner-table tr td {
+    font-size: 12px;
+}
+
+.content-table tr.title {
+    background-color:#e1e7f7;
+}
+
+
+.content-table tr td {
+    padding:5px;
+}
+
+.content-table tr.title td {
+    font-size: 12px;
+    font-weight:bold;
+    color: #000;
+    padding: 8px;
+}
+.content-table tr td.border {
+    border-bottom:1px solid #F2F2F2;
+    font-size: 12px;
+}
+
+.content-table td.field 
+{
+    border-bottom: 1px solid #fff;
+    background-color:#cccdcf;
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:3px;
+    padding-bottom:3px;
+    font-size: 12px;
+    font-weight:bold
+}
+
+.content-table tr.hidden td.field 
+{
+    color: #a0a0a0;
+}
+
+
+.content-table td.value 
+{
+    border-bottom: 1px solid #D0D8E9;
+    background-color:#fff;
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:3px;
+    padding-bottom:3px;
+    font-size: 12px;
+}
+.content-table tr.hidden td.value 
+{
+    background-color: #000;
+}
+
+.content-table .blob_value {
+    padding-left: 5px;
+}
+
+.content-table .blob_value img {
+    border: 2px solid #A5CCDB;
+    padding: 1px;
+}
+
+
+.content-table td.errorbox {
+    border: 2px solid #f00;
+}
+
+.content-table td.value td {
+    font-size: 12px;
+}
+
+.content-table tr td.checkbox {
+    width: 20px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.content-table tr td a {
+    font-size: 12px;
+}
+
+img.toggle-button 
+{
+    cursor: hand;
+}
+
+.content-table tr td.icon {
+    width: 28px;
+    padding-right: 5px;
+}
+
+.content-table .small-text{
+    color: #a0a0a0;
+    font-size: 10px;
+    white-space: normal;
+}
+.small-text {
+    color: #a0a0a0;
+    font-size: 10px;
+}
+
+
+.subcontent-table {
+    width: 100%;
+}
+
+.subcontent-table tr td.collapseicon {
+    width:30px;
+    vertical-align:top;
+    padding-top:5px;
+    padding-left:5px;
+    text-align:left;
+    background-color: #fff;
+}
+
+.subcontent-table tr td.template-container {
+    border-left:1px solid #C0C0C0;
+}
+
+.unique {
+    font-weight:bold;
+    background-color:#e1e7f7;
+    color:#000;
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:3px;
+    padding-bottom:3px;
+    font-size: 11px;
+}
+
+.content-table tr.selected {
+    background-color:#ffeed2;
+    cursor:default;
+}
+
+.content-table tr.normal {
+    cursor:default;
+}
+
+/*
+table.admin-template tr.selected td,
+.content-table tr.selected td {
+    color: #fff;
+}
+*/
+
+table.admin-template tr.selected .template-field,
+.content-table tr.selected .template-field {
+    background-color: #f5d093;
+}
+
+/*
+table.admin-template tr.selected .tree-link,
+.content-table tr.selected .tree-link {
+    color: #fff;
+}
+*/
+/*
+table.admin-template tr.selected .small-text,
+.content-table tr.selected .small-text {
+    color: #fff;
+}
+*/
+
+table.admin-template {
+    width: 100%;
+    cursor:default;
+}
+
+table.admin-template td.checkbox {
+    width: 100px;
+}
+
+table.admin-template tr.selected {
+    background-color:#ffeed2;
+    cursor:default;
+}
+
+table.admin-template tr.normal {
+    cursor:default;
+}
+
+table.admin-template td {
+    font-size: 12px;
+}
+
+
+.template-content-table {
+    width: 100%;
+}
+
+.template-content-table tr td {
+    padding: 2px;
+    padding-left: 5px;    
+    vertical-align:top;
+    text-align:left;
+}
+
+.template-content-table tr td img {
+    border: 2px solid #A5CCDB;
+    padding: 1px;
+}
+
+.template-content-table tr td.template-field {      
+    background-color: #D0D8E9;
+    font-size: 11px;
+    font-weight:bold;
+    white-space:nowrap;
+    width: 200px;
+}
+
+.template-content-table tr td.template-value {
+    font-size: 11px;
+} 
+
+
+.template-content-table tr td div.template-onetomany-title {
+    height: 18px;
+    background-color: #D0D8E9;
+    font-size: 11px;
+    font-weight:bold;
+    white-space:nowrap;
+    margin-bottom: 1px;
+    padding-top: 1px;
+}
+
+.template-content-table tr td div.template-onetomany-title .toggler-collapsed {
+    background-image:url(../images/icons/expand.gif) !important;
+    border: 0px;
+    margin: 0px 5px 0px 0px;
+    float:left;
+    width: 16px;
+    height: 16px;
+}
+
+.template-content-table tr td div.template-onetomany-title .toggler-expanded {
+    background-image:url(../images/icons/collapse.gif) !important;
+    border: 0px;    
+    margin: 0px 5px 0px 0px;    
+    float:left;    
+    width: 16px;
+    height: 16px;
+}
+
+
+
+
+
+/* templates */
